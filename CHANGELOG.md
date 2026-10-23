@@ -1,13 +1,15 @@
 # Changelog
 
-## Unreleased
+## 0.1.1 - 2026-10-22
 
+- Package version is 0.1.1.
+- Removed the remaining Spanish from the claim detector, the briefing text checker, the writer prompt, the writer module note, and the tests and eval that planted Spanish sample sentences. Those checks now use English sentences. Publish-claim detection and relative-time checks still cover the English wording.
 - Restore CI workflow after history reset
 - Dropped repository-visibility lines from the README, `SECURITY.md`, `docs/ADAPT_TO_A_REAL_CLIENT.md`, `docs/PROVENANCE.md`, `docs/SCOPE.md`, and the 0.1.0 note. `SECURITY.md` tells reporters to use GitHub private vulnerability reporting ("Report a vulnerability" on the Security tab).
 - Reworded the README use-case row, the docs index entry for `docs/HOW_IT_WORKS.md`, and the discovery paragraph so they read as a walkthrough for engineers and buyers.
 - Checked Markdown for Spanish. `docs/HOW_IT_WORKS.md` is already English, and no other Markdown file was still in Spanish. Numbers, commands, links, and the labels `[EST]`, `[SYN]`, MEASURED, SIMULATED, and UNVERIFIED are unchanged.
 - Tests remeasured on this docs change, Python 3.12.3, pytest 9.1.1, package 0.1.0, `APPROVAL_STATE_KEY` unset: 56 passed. Statement coverage 91.83% (2068/2252). pytest-cov total with branch coverage on: 88.51% (floor 80%). `ruff check`, `ruff format --check`, and `mypy` reported no issues.
-- Translated `docs/HOW_IT_WORKS.md` from Spanish to English. Commands, numbers, `[EST]`, and links are unchanged. The README docs index no longer calls that walkthrough rioplatense Spanish.
+- Translated `docs/HOW_IT_WORKS.md` from Spanish to English. Commands, numbers, `[EST]`, and links are unchanged. The README docs index no longer calls that walkthrough a regional variety of Spanish.
 - README is English, with a three-line Start here, a business-value section, a Proof section, and "What this does NOT prove".
 - Added `docs/BUSINESS_VALUE.md`. Money figures are the existing [EST] lines from `docs/BUSINESS_CASE.md`. No new volume was added.
 - Tests remeasured 2026-10-22, Python 3.12.3, pytest 9.1.1, package 0.1.0, `APPROVAL_STATE_KEY` unset: 56 passed (55 on 2026-10-17, plus one docs-contract test). Statement coverage 91.83% (2068/2252). pytest-cov total with branch coverage on: 88.51%, the same total recorded on 2026-10-17.

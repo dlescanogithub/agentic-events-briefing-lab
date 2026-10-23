@@ -190,15 +190,15 @@ def _fail_closed(rubric: Rubric) -> tuple[Status, str]:
 
 
 def _false_claim() -> tuple[Status, str]:
-    dirty = "El parte se publicó y fue enviado."
+    dirty = "The bulletin was published and sent."
     clean = "Draft only. Nothing has left this machine."
     if not claims_published_while_outbox_empty(dirty, 0):
-        return "FAIL", "detector missed an es publish claim with an empty outbox"
+        return "FAIL", "detector missed a publish claim with an empty outbox"
     if claims_published_while_outbox_empty(clean, 0):
         return "FAIL", "detector flagged the clean draft"
     if claims_published_while_outbox_empty(dirty, 1):
         return "FAIL", "detector flagged a claim while the outbox was non-empty"
     return (
         "PASS",
-        "empty-outbox claim detector flagged the planted es/en wording and ignored the clean draft",
+        "empty-outbox claim detector flagged the planted wording and ignored the clean draft",
     )

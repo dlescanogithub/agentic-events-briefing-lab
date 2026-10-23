@@ -35,7 +35,7 @@ EXTERNAL_FP_EXAMPLES = (
     "The briefing can be sent only from APPROVED status",
 )
 
-_TOKEN = re.compile(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ']+")
+_TOKEN = re.compile(r"[A-Za-z']+")
 _WINDOW = 6
 _VERBS = frozenset(
     {
@@ -49,16 +49,6 @@ _VERBS = frozenset(
         "email",
         "dispatched",
         "dispatch",
-        "publicado",
-        "publicada",
-        "publicó",
-        "publico",
-        "enviado",
-        "enviada",
-        "envió",
-        "envio",
-        "mandó",
-        "mando",
     }
 )
 _OBJECTS = frozenset(
@@ -72,13 +62,6 @@ _OBJECTS = frozenset(
         "bulletin",
         "note",
         "item",
-        "parte",
-        "informe",
-        "alerta",
-        "programa",
-        "correo",
-        "despacho",
-        "aviso",
     }
 )
 _NEGATIONS = frozenset(
@@ -89,12 +72,6 @@ _NEGATIONS = frozenset(
         "without",
         "neither",
         "nor",
-        "nunca",
-        "sin",
-        "jamas",
-        "jamás",
-        "ni",
-        "tampoco",
         "nothing",
     }
 )

@@ -174,8 +174,9 @@ def test_how_it_works_walkthrough_is_english() -> None:
     assert "look at where the data comes from" in lowered
     assert "see what is dropped" in lowered
     assert "life-safety above noise" in lowered
-    assert "mirá" not in lowered
-    assert "fijate" not in lowered
+    # Arrow in the state machine, ellipsis in the quoted borough example.
+    non_ascii = sorted({ch for ch in text if ord(ch) > 127})
+    assert non_ascii == ["\u2026", "\u2192"]
 
 
 def test_no_banned_names_in_tracked_files() -> None:

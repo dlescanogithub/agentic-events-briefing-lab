@@ -8,6 +8,7 @@ from pathlib import Path
 import httpx
 import pytest
 
+from events_briefing import __version__
 from events_briefing.briefing.gate import TRANSITIONS, BriefingStore, GateError
 from events_briefing.briefing.invariants import claims_published_while_outbox_empty
 from events_briefing.briefing.prompts import build_prompt
@@ -331,7 +332,7 @@ def test_gate_and_false_publish_claim(tmp_path: Path) -> None:
     assert (
         claims_published_while_outbox_empty("This briefing was published and emailed.", 0) is True
     )
-    assert claims_published_while_outbox_empty("El parte se publicó.", 0) is True
+    assert claims_published_while_outbox_empty("The alert was dispatched.", 0) is True
     assert claims_published_while_outbox_empty("Draft only.", 0) is False
     other = BriefingStore(tmp_path / "other", demo=True)
     other.create(
@@ -359,14 +360,16 @@ def test_gate_and_false_publish_claim(tmp_path: Path) -> None:
 
 def test_eval_gate_and_regression() -> None:
     rubric = _rubric()
-    report = run_eval(rubric, "0.1.0")
+    assert __version__ == "0.1.1"
+    report = run_eval(rubric, __version__)
+    assert report.package_version == "0.1.1"
     assert eval_exit_code(report) == 0
     assert report.incomplete_count == 0
     assert report.fail_count == 0
     assert report.pass_count == 8
     assert report.n_incidents == 10
     assert report.life_safety_above_noise_rate == 1.0
-    reg_report, code = run_regression(rubric, "0.1.0")
+    reg_report, code = run_regression(rubric, __version__)
     assert code == 1
     assert reg_report.fail_count == 1
     assert reg_report.pass_count == 1
