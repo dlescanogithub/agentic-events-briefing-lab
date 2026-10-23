@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Restore CI workflow after history reset
 - Dropped repository-visibility lines from the README, `SECURITY.md`, `docs/ADAPT_TO_A_REAL_CLIENT.md`, `docs/PROVENANCE.md`, `docs/SCOPE.md`, and the 0.1.0 note. `SECURITY.md` tells reporters to use GitHub private vulnerability reporting ("Report a vulnerability" on the Security tab).
 - Reworded the README use-case row, the docs index entry for `docs/HOW_IT_WORKS.md`, and the discovery paragraph so they read as a walkthrough for engineers and buyers.
 - Checked Markdown for Spanish. `docs/HOW_IT_WORKS.md` is already English, and no other Markdown file was still in Spanish. Numbers, commands, links, and the labels `[EST]`, `[SYN]`, MEASURED, SIMULATED, and UNVERIFIED are unchanged.
