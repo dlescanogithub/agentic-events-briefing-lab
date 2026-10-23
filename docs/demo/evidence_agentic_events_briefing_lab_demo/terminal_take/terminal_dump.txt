@@ -1,0 +1,40 @@
+events $ APPROVAL_STATE_KEY=lab-simulated-not-a-secret python -m events_briefing demo --offline 2>/dev/null | tee /tmp/events_demo.txt
+approval gate (simulated actor): simulated-editor. Production needs an authenticated channel; this lab does not have one.
+mode=snapshots
+model_leg=stub cost_usd=0.0 status=PUBLISHED
+incidents=67 withheld_sensitive=1 rubric=2026-10-17.1
+out=out
+   1 life_safety 4.51 nypd_complaint:327350219
+   2 life_safety 4.447371 nypd_complaint:327375654
+   3 life_safety 4.447371 nypd_complaint:327383570
+   4 life_safety 4.43 fdny_fire:260930-B0421-003-1112
+   5 life_safety 4.43 fdny_fire:260930-X3519-003-0924
+events $ clear
+[H[2J[3Jevents $ grep -E 'mode=|model_leg=|incidents=|status=|approval gate' /tmp/events_demo.txt
+approval gate (simulated actor): simulated-editor. Production needs an authenticated channel; this lab does not have one.
+mode=snapshots
+model_leg=stub cost_usd=0.0 status=PUBLISHED
+incidents=67 withheld_sensitive=1 rubric=2026-10-17.1
+events $ clear
+[H[2J[3Jevents $ grep life_safety /tmp/events_demo.txt | head -5
+   1 life_safety 4.51 nypd_complaint:327350219
+   2 life_safety 4.447371 nypd_complaint:327375654
+   3 life_safety 4.447371 nypd_complaint:327383570
+   4 life_safety 4.43 fdny_fire:260930-B0421-003-1112
+   5 life_safety 4.43 fdny_fire:260930-X3519-003-0924
+events $ clear
+[H[2J[3Jevents $ sed -n '1,12p' README.md | fold -s -w 120
+# Agentic events briefing lab
+
+**Start here**
+
+- Proves an explicit rubric ranks every life-safety incident above noise on a synthetic set, and a local outbox stays 
+empty until an approval gate (simulated actor) is APPROVED.
+- One command: `python3 -m events_briefing demo --offline`
+- Docs: [docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)
+
+Recreated scenario with public data, not a client deliverable.
+
+Architecture inspired by a team project; this is a personal recreation with public data, not a client deliverable.
+
+events $ 

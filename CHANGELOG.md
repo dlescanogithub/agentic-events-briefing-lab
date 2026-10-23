@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Add narrated English demo video (`agentic_events_briefing_lab_demo_en.mp4`) with subtitles and evidence pack under `docs/demo/`.
+
 ## 0.1.1 - 2026-10-22
 
 - Package version is 0.1.1.
