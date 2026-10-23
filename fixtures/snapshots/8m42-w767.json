@@ -1,0 +1,213 @@
+{
+  "captured_at": "2026-10-17T19:39:44.879483+00:00",
+  "dataset_id": "8m42-w767",
+  "page_url": "https://data.cityofnewyork.us/Public-Safety/Fire-Incident-Dispatch-Data/8m42-w767",
+  "precision": "latitude/longitude rounded to 2 decimal degrees before write (about 1.1 km). Raw coordinates are not stored. FDNY rows have no point coordinates in the source; none are invented here.",
+  "pulls": [
+    {
+      "limit": 15,
+      "order": "incident_datetime DESC",
+      "returned": 15,
+      "where": "incident_datetime IS NOT NULL"
+    },
+    {
+      "limit": 6,
+      "order": "incident_datetime DESC",
+      "returned": 6,
+      "where": "incident_classification_group = 'Structural Fires'"
+    }
+  ],
+  "rows": [
+    {
+      "communitydistrict": "312",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "BROOKLYN",
+      "incident_classification": "Assist Civilian - Non-Medical",
+      "incident_classification_group": "NonMedical Emergencies",
+      "incident_datetime": "2026-09-30T23:59:34.000",
+      "starfire_incident_id": "261001-B2516-001-0001"
+    },
+    {
+      "communitydistrict": "317",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "BROOKLYN",
+      "incident_classification": "Medical - Victim Deceased",
+      "incident_classification_group": "Medical Emergencies",
+      "incident_datetime": "2026-09-30T23:58:23.000",
+      "starfire_incident_id": "260930-B1629-002-1120"
+    },
+    {
+      "communitydistrict": "106",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "MANHATTAN",
+      "incident_classification": "Medical - EMS Link 10-91",
+      "incident_classification_group": "Medical Emergencies",
+      "incident_datetime": "2026-09-30T23:58:04.000",
+      "starfire_incident_id": "260930-M0613-002-1493"
+    },
+    {
+      "communitydistrict": "209",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "BRONX",
+      "incident_classification": "Medical - EMS Link 10-91",
+      "incident_classification_group": "Medical Emergencies",
+      "incident_datetime": "2026-09-30T23:55:12.000",
+      "starfire_incident_id": "260930-X3081-002-0955"
+    },
+    {
+      "communitydistrict": "412",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "QUEENS",
+      "incident_classification": "Medical - EMS Link 10-91",
+      "incident_classification_group": "Medical Emergencies",
+      "incident_datetime": "2026-09-30T23:53:45.000",
+      "starfire_incident_id": "260930-Q4802-001-0832"
+    },
+    {
+      "communitydistrict": "317",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "BROOKLYN",
+      "incident_classification": "Medical - EMS Link 10-91",
+      "incident_classification_group": "Medical Emergencies",
+      "incident_datetime": "2026-09-30T23:53:27.000",
+      "starfire_incident_id": "260930-B3956-003-1114"
+    },
+    {
+      "communitydistrict": "302",
+      "highest_alarm_level": "All Hands Working",
+      "incident_borough": "BROOKLYN",
+      "incident_classification": "Multiple Dwelling 'A' - Other fire",
+      "incident_classification_group": "Structural Fires",
+      "incident_datetime": "2026-09-30T23:51:59.000",
+      "starfire_incident_id": "260930-B0421-003-1112"
+    },
+    {
+      "communitydistrict": "310",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "BROOKLYN",
+      "incident_classification": "Medical - EMS Link 10-91",
+      "incident_classification_group": "Medical Emergencies",
+      "incident_datetime": "2026-09-30T23:51:47.000",
+      "starfire_incident_id": "260930-B2649-001-1111"
+    },
+    {
+      "communitydistrict": "403",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "QUEENS",
+      "incident_classification": "Medical - EMS Link 10-91",
+      "incident_classification_group": "Medical Emergencies",
+      "incident_datetime": "2026-09-30T23:49:15.000",
+      "starfire_incident_id": "260930-Q7846-001-0831"
+    },
+    {
+      "communitydistrict": "104",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "MANHATTAN",
+      "incident_classification": "Medical - Breathing / Ill or Sick",
+      "incident_classification_group": "Medical Emergencies",
+      "incident_datetime": "2026-09-30T23:49:06.000",
+      "starfire_incident_id": "260930-M0883-001-1488"
+    },
+    {
+      "communitydistrict": "105",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "MANHATTAN",
+      "incident_classification": "Medical MFA - EMS Link",
+      "incident_classification_group": "Medical MFAs",
+      "incident_datetime": "2026-09-30T23:49:06.000",
+      "starfire_incident_id": "260930-M0659-003-1487"
+    },
+    {
+      "communitydistrict": "501",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "RICHMOND / STATEN ISLAND",
+      "incident_classification": "Medical - No PT Contact EMS is Onscene",
+      "incident_classification_group": "Medical Emergencies",
+      "incident_datetime": "2026-09-30T23:47:58.000",
+      "starfire_incident_id": "260930-R0769-001-0194"
+    },
+    {
+      "communitydistrict": "407",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "QUEENS",
+      "incident_classification": "Vehicle Accident - Other",
+      "incident_classification_group": "NonMedical Emergencies",
+      "incident_datetime": "2026-09-30T23:47:17.000",
+      "starfire_incident_id": "260930-Q2944-002-0830"
+    },
+    {
+      "communitydistrict": "314",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "BROOKLYN",
+      "incident_classification": "Medical - No PT Contact EMS is Onscene",
+      "incident_classification_group": "Medical Emergencies",
+      "incident_datetime": "2026-09-30T23:46:29.000",
+      "starfire_incident_id": "260930-B1540-001-1105"
+    },
+    {
+      "communitydistrict": "302",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "BROOKLYN",
+      "incident_classification": "Medical - EMS Link 10-91",
+      "incident_classification_group": "Medical Emergencies",
+      "incident_datetime": "2026-09-30T23:46:14.000",
+      "starfire_incident_id": "260930-B0384-001-1104"
+    },
+    {
+      "communitydistrict": "208",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "BRONX",
+      "incident_classification": "Multiple Dwelling 'A' - Food on the stove fire",
+      "incident_classification_group": "Structural Fires",
+      "incident_datetime": "2026-09-30T22:58:02.000",
+      "starfire_incident_id": "260930-X3519-003-0924"
+    },
+    {
+      "communitydistrict": "201",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "BRONX",
+      "incident_classification": "Multiple Dwelling 'A' - Food on the stove fire",
+      "incident_classification_group": "Structural Fires",
+      "incident_datetime": "2026-09-30T22:40:28.000",
+      "starfire_incident_id": "260930-X2126-001-0914"
+    },
+    {
+      "communitydistrict": "212",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "BRONX",
+      "incident_classification": "Multiple Dwelling 'A' - Food on the stove fire",
+      "incident_classification_group": "Structural Fires",
+      "incident_datetime": "2026-09-30T22:02:08.000",
+      "starfire_incident_id": "260930-X3693-001-0881"
+    },
+    {
+      "communitydistrict": "303",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "BROOKLYN",
+      "incident_classification": "Private Dwelling Fire",
+      "incident_classification_group": "Structural Fires",
+      "incident_datetime": "2026-09-30T21:47:26.000",
+      "starfire_incident_id": "260930-B0653-002-1034"
+    },
+    {
+      "communitydistrict": "501",
+      "highest_alarm_level": "First Alarm",
+      "incident_borough": "RICHMOND / STATEN ISLAND",
+      "incident_classification": "Private Dwelling Fire",
+      "incident_classification_group": "Structural Fires",
+      "incident_datetime": "2026-09-30T21:13:29.000",
+      "starfire_incident_id": "260930-R0648-001-0177"
+    }
+  ],
+  "select_fields_requested": [
+    "starfire_incident_id",
+    "incident_datetime",
+    "incident_borough",
+    "communitydistrict",
+    "incident_classification",
+    "incident_classification_group",
+    "highest_alarm_level"
+  ],
+  "source": "fdny_fire",
+  "title": "Fire Incident Dispatch Data"
+}

@@ -1,0 +1,320 @@
+{
+  "captured_at": "2026-10-17T19:39:44.879483+00:00",
+  "dataset_id": "erm2-nwe9",
+  "page_url": "https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2020-to-Present/erm2-nwe9",
+  "precision": "latitude/longitude rounded to 2 decimal degrees before write (about 1.1 km). Raw coordinates are not stored. FDNY rows have no point coordinates in the source; none are invented here.",
+  "pulls": [
+    {
+      "limit": 20,
+      "order": "created_date DESC",
+      "returned": 20,
+      "where": "created_date > '2026-10-16T00:00:00' AND latitude IS NOT NULL"
+    },
+    {
+      "limit": 4,
+      "order": "created_date DESC",
+      "returned": 4,
+      "where": "complaint_type = 'Hazardous Materials' AND latitude IS NOT NULL"
+    },
+    {
+      "limit": 4,
+      "order": "created_date DESC",
+      "returned": 4,
+      "where": "complaint_type = 'Electrical' AND latitude IS NOT NULL"
+    }
+  ],
+  "rows": [
+    {
+      "agency": "NYPD",
+      "borough": "Unspecified",
+      "community_board": "0 Unspecified",
+      "complaint_type": "Noise - Commercial",
+      "created_date": "2026-10-16T01:51:34.000",
+      "lat_rounded": 40.73,
+      "lon_rounded": -73.98,
+      "unique_key": "70765514"
+    },
+    {
+      "agency": "NYPD",
+      "borough": "QUEENS",
+      "community_board": "01 QUEENS",
+      "complaint_type": "Noise - Residential",
+      "created_date": "2026-10-16T01:51:28.000",
+      "lat_rounded": 40.76,
+      "lon_rounded": -73.94,
+      "unique_key": "70765005"
+    },
+    {
+      "agency": "NYPD",
+      "borough": "Unspecified",
+      "community_board": "0 Unspecified",
+      "complaint_type": "Noise - Residential",
+      "created_date": "2026-10-16T01:51:27.000",
+      "lat_rounded": 40.73,
+      "lon_rounded": -73.96,
+      "unique_key": "70770337"
+    },
+    {
+      "agency": "DSNY",
+      "borough": "Unspecified",
+      "community_board": "0 Unspecified",
+      "complaint_type": "Residential Disposal Complaint",
+      "created_date": "2026-10-16T01:51:23.000",
+      "lat_rounded": 40.67,
+      "lon_rounded": -73.94,
+      "unique_key": "70769727"
+    },
+    {
+      "agency": "DSNY",
+      "borough": "Unspecified",
+      "community_board": "0 Unspecified",
+      "complaint_type": "Dirty Condition",
+      "created_date": "2026-10-16T01:51:15.000",
+      "lat_rounded": 40.73,
+      "lon_rounded": -73.98,
+      "unique_key": "70766819"
+    },
+    {
+      "agency": "NYPD",
+      "borough": "Unspecified",
+      "community_board": "0 Unspecified",
+      "complaint_type": "Illegal Parking",
+      "created_date": "2026-10-16T01:50:52.000",
+      "lat_rounded": 40.64,
+      "lon_rounded": -74.03,
+      "unique_key": "70770167"
+    },
+    {
+      "agency": "NYPD",
+      "borough": "QUEENS",
+      "community_board": "08 QUEENS",
+      "complaint_type": "Illegal Parking",
+      "created_date": "2026-10-16T01:50:34.000",
+      "lat_rounded": 40.73,
+      "lon_rounded": -73.83,
+      "unique_key": "70766512"
+    },
+    {
+      "agency": "NYPD",
+      "borough": "Unspecified",
+      "community_board": "0 Unspecified",
+      "complaint_type": "Illegal Parking",
+      "created_date": "2026-10-16T01:50:22.000",
+      "lat_rounded": 40.65,
+      "lon_rounded": -73.87,
+      "unique_key": "70768817"
+    },
+    {
+      "agency": "NYPD",
+      "borough": "BROOKLYN",
+      "community_board": "05 BROOKLYN",
+      "complaint_type": "Illegal Parking",
+      "created_date": "2026-10-16T01:50:16.000",
+      "lat_rounded": 40.68,
+      "lon_rounded": -73.89,
+      "unique_key": "70773128"
+    },
+    {
+      "agency": "NYPD",
+      "borough": "BROOKLYN",
+      "community_board": "02 BROOKLYN",
+      "complaint_type": "Illegal Parking",
+      "created_date": "2026-10-16T01:49:36.000",
+      "lat_rounded": 40.69,
+      "lon_rounded": -73.98,
+      "unique_key": "70773202"
+    },
+    {
+      "agency": "NYPD",
+      "borough": "BRONX",
+      "community_board": "04 BRONX",
+      "complaint_type": "Noise - Residential",
+      "created_date": "2026-10-16T01:49:27.000",
+      "lat_rounded": 40.83,
+      "lon_rounded": -73.93,
+      "unique_key": "70767071"
+    },
+    {
+      "agency": "NYPD",
+      "borough": "BRONX",
+      "community_board": "09 BRONX",
+      "complaint_type": "Noise - Street/Sidewalk",
+      "created_date": "2026-10-16T01:49:14.000",
+      "lat_rounded": 40.83,
+      "lon_rounded": -73.87,
+      "unique_key": "70768570"
+    },
+    {
+      "agency": "NYPD",
+      "borough": "BRONX",
+      "community_board": "08 BRONX",
+      "complaint_type": "Non-Emergency Police Matter",
+      "created_date": "2026-10-16T01:49:06.000",
+      "lat_rounded": 40.88,
+      "lon_rounded": -73.91,
+      "unique_key": "70765727"
+    },
+    {
+      "agency": "DEP",
+      "borough": "BROOKLYN",
+      "community_board": "01 BROOKLYN",
+      "complaint_type": "Water Maintenance",
+      "created_date": "2026-10-16T01:48:33.000",
+      "lat_rounded": 40.72,
+      "lon_rounded": -73.94,
+      "unique_key": "70765561"
+    },
+    {
+      "agency": "DHS",
+      "borough": "MANHATTAN",
+      "community_board": "01 MANHATTAN",
+      "complaint_type": "Homeless Person Assistance",
+      "created_date": "2026-10-16T01:48:13.000",
+      "lat_rounded": 40.72,
+      "lon_rounded": -74.0,
+      "unique_key": "70767816"
+    },
+    {
+      "agency": "DHS",
+      "borough": "QUEENS",
+      "community_board": "12 QUEENS",
+      "complaint_type": "Homeless Person Assistance",
+      "created_date": "2026-10-16T01:46:35.000",
+      "lat_rounded": 40.7,
+      "lon_rounded": -73.81,
+      "unique_key": "70764906"
+    },
+    {
+      "agency": "NYPD",
+      "borough": "BROOKLYN",
+      "community_board": "05 BROOKLYN",
+      "complaint_type": "Illegal Parking",
+      "created_date": "2026-10-16T01:45:54.000",
+      "lat_rounded": 40.65,
+      "lon_rounded": -73.88,
+      "unique_key": "70767296"
+    },
+    {
+      "agency": "NYPD",
+      "borough": "BRONX",
+      "community_board": "05 BRONX",
+      "complaint_type": "Noise - Street/Sidewalk",
+      "created_date": "2026-10-16T01:45:41.000",
+      "lat_rounded": 40.86,
+      "lon_rounded": -73.9,
+      "unique_key": "70770044"
+    },
+    {
+      "agency": "NYPD",
+      "borough": "BROOKLYN",
+      "community_board": "15 BROOKLYN",
+      "complaint_type": "Noise - Residential",
+      "created_date": "2026-10-16T01:45:38.000",
+      "lat_rounded": 40.6,
+      "lon_rounded": -73.94,
+      "unique_key": "70765755"
+    },
+    {
+      "agency": "NYPD",
+      "borough": "MANHATTAN",
+      "community_board": "02 MANHATTAN",
+      "complaint_type": "Noise - Residential",
+      "created_date": "2026-10-16T01:45:14.000",
+      "lat_rounded": 40.72,
+      "lon_rounded": -73.99,
+      "unique_key": "70767119"
+    },
+    {
+      "agency": "DEP",
+      "borough": "QUEENS",
+      "community_board": "12 QUEENS",
+      "complaint_type": "Hazardous Materials",
+      "created_date": "2026-07-28T13:28:00.000",
+      "lat_rounded": 40.7,
+      "lon_rounded": -73.79,
+      "unique_key": "69872613"
+    },
+    {
+      "agency": "DEP",
+      "borough": "BRONX",
+      "community_board": "04 BRONX",
+      "complaint_type": "Hazardous Materials",
+      "created_date": "2026-07-28T12:16:00.000",
+      "lat_rounded": 40.82,
+      "lon_rounded": -73.92,
+      "unique_key": "69869635"
+    },
+    {
+      "agency": "DEP",
+      "borough": "QUEENS",
+      "community_board": "10 QUEENS",
+      "complaint_type": "Hazardous Materials",
+      "created_date": "2026-07-28T11:11:00.000",
+      "lat_rounded": 40.68,
+      "lon_rounded": -73.82,
+      "unique_key": "69874055"
+    },
+    {
+      "agency": "DEP",
+      "borough": "BRONX",
+      "community_board": "04 BRONX",
+      "complaint_type": "Hazardous Materials",
+      "created_date": "2026-07-28T10:22:00.000",
+      "lat_rounded": 40.83,
+      "lon_rounded": -73.92,
+      "unique_key": "69871099"
+    },
+    {
+      "agency": "DOB",
+      "borough": "BROOKLYN",
+      "community_board": "06 BROOKLYN",
+      "complaint_type": "Electrical",
+      "created_date": "2026-10-15T17:09:33.000",
+      "lat_rounded": 40.68,
+      "lon_rounded": -73.99,
+      "unique_key": "70765977"
+    },
+    {
+      "agency": "DOB",
+      "borough": "BROOKLYN",
+      "community_board": "15 BROOKLYN",
+      "complaint_type": "Electrical",
+      "created_date": "2026-10-15T14:50:07.000",
+      "lat_rounded": 40.59,
+      "lon_rounded": -73.95,
+      "unique_key": "70768895"
+    },
+    {
+      "agency": "DOB",
+      "borough": "BROOKLYN",
+      "community_board": "11 BROOKLYN",
+      "complaint_type": "Electrical",
+      "created_date": "2026-10-15T13:57:49.000",
+      "lat_rounded": 40.6,
+      "lon_rounded": -73.99,
+      "unique_key": "70767390"
+    },
+    {
+      "agency": "DOB",
+      "borough": "QUEENS",
+      "community_board": "01 QUEENS",
+      "complaint_type": "Electrical",
+      "created_date": "2026-10-15T12:59:06.000",
+      "lat_rounded": 40.76,
+      "lon_rounded": -73.91,
+      "unique_key": "70768894"
+    }
+  ],
+  "select_fields_requested": [
+    "unique_key",
+    "created_date",
+    "agency",
+    "complaint_type",
+    "borough",
+    "community_board",
+    "latitude",
+    "longitude"
+  ],
+  "source": "nyc_311",
+  "title": "311 Service Requests from 2020 to Present"
+}

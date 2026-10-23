@@ -1,0 +1,5 @@
+The MIT License in the LICENSE file covers this repository's code and original documentation.
+
+It does not relicense the NYC Open Data snapshots under fixtures/snapshots/.
+Those rows stay subject to the City of New York terms cited in docs/DATA_SOURCES.md.
+Dataset metadata returned license null on the Socrata view API. No open-source data license was stated there. This repository does not relicense the snapshots.

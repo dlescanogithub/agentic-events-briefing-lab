@@ -1,0 +1,207 @@
+{
+  "captured_at": "2026-10-17T19:39:44.879483+00:00",
+  "dataset_id": "5uac-w243",
+  "page_url": "https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-Year-To-Date-/5uac-w243",
+  "precision": "latitude/longitude rounded to 2 decimal degrees before write (about 1.1 km). Raw coordinates are not stored. FDNY rows have no point coordinates in the source; none are invented here.",
+  "pulls": [
+    {
+      "limit": 20,
+      "order": "cmplnt_fr_dt DESC",
+      "returned": 20,
+      "where": "latitude IS NOT NULL AND cmplnt_fr_dt IS NOT NULL"
+    }
+  ],
+  "rows": [
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327388305",
+      "lat_rounded": 40.9,
+      "law_cat_cd": "MISDEMEANOR",
+      "lon_rounded": -73.85,
+      "ofns_desc": "PETIT LARCENY"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327388308",
+      "lat_rounded": 40.9,
+      "law_cat_cd": "VIOLATION",
+      "lon_rounded": -73.86,
+      "ofns_desc": "HARRASSMENT 2"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327372050",
+      "lat_rounded": 40.9,
+      "law_cat_cd": "FELONY",
+      "lon_rounded": -73.84,
+      "ofns_desc": "GRAND LARCENY"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327866900",
+      "lat_rounded": 40.87,
+      "law_cat_cd": "MISDEMEANOR",
+      "lon_rounded": -73.89,
+      "ofns_desc": "PETIT LARCENY"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327342123",
+      "lat_rounded": 40.88,
+      "law_cat_cd": "MISDEMEANOR",
+      "lon_rounded": -73.87,
+      "ofns_desc": "PETIT LARCENY"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327383563",
+      "lat_rounded": 40.88,
+      "law_cat_cd": "VIOLATION",
+      "lon_rounded": -73.83,
+      "ofns_desc": "HARRASSMENT 2"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327391033",
+      "lat_rounded": 40.89,
+      "law_cat_cd": "MISDEMEANOR",
+      "lon_rounded": -73.92,
+      "ofns_desc": "ASSAULT 3 & RELATED OFFENSES"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327391337",
+      "lat_rounded": 40.89,
+      "law_cat_cd": "VIOLATION",
+      "lon_rounded": -73.83,
+      "ofns_desc": "HARRASSMENT 2"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327361161",
+      "lat_rounded": 40.88,
+      "law_cat_cd": "MISDEMEANOR",
+      "lon_rounded": -73.91,
+      "ofns_desc": "OFF. AGNST PUB ORD SENSBLTY &"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327411265",
+      "lat_rounded": 40.88,
+      "law_cat_cd": "MISDEMEANOR",
+      "lon_rounded": -73.86,
+      "ofns_desc": "PETIT LARCENY"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327364109",
+      "lat_rounded": 40.88,
+      "law_cat_cd": "FELONY",
+      "lon_rounded": -73.83,
+      "ofns_desc": "CRIMINAL MISCHIEF & RELATED OF"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327383569",
+      "lat_rounded": 40.88,
+      "law_cat_cd": "MISDEMEANOR",
+      "lon_rounded": -73.9,
+      "ofns_desc": "PETIT LARCENY"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327383570",
+      "lat_rounded": 40.87,
+      "law_cat_cd": "MISDEMEANOR",
+      "lon_rounded": -73.9,
+      "ofns_desc": "ASSAULT 3 & RELATED OFFENSES"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327375654",
+      "lat_rounded": 40.87,
+      "law_cat_cd": "MISDEMEANOR",
+      "lon_rounded": -73.9,
+      "ofns_desc": "ASSAULT 3 & RELATED OFFENSES"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327380800",
+      "lat_rounded": 40.88,
+      "law_cat_cd": "VIOLATION",
+      "lon_rounded": -73.91,
+      "ofns_desc": "HARRASSMENT 2"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327350219",
+      "lat_rounded": 40.88,
+      "law_cat_cd": "FELONY",
+      "lon_rounded": -73.91,
+      "ofns_desc": "ROBBERY"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327400941",
+      "lat_rounded": 40.89,
+      "law_cat_cd": "MISDEMEANOR",
+      "lon_rounded": -73.85,
+      "ofns_desc": "INTOXICATED & IMPAIRED DRIVING"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327653221",
+      "lat_rounded": 40.87,
+      "law_cat_cd": "FELONY",
+      "lon_rounded": -73.88,
+      "ofns_desc": "SEX CRIMES"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327350217",
+      "lat_rounded": 40.88,
+      "law_cat_cd": "MISDEMEANOR",
+      "lon_rounded": -73.9,
+      "ofns_desc": "PETIT LARCENY"
+    },
+    {
+      "boro_nm": "BRONX",
+      "cmplnt_fr_dt": "2026-06-30T00:00:00.000",
+      "cmplnt_num": "327414396",
+      "lat_rounded": 40.89,
+      "law_cat_cd": "MISDEMEANOR",
+      "lon_rounded": -73.83,
+      "ofns_desc": "PETIT LARCENY"
+    }
+  ],
+  "select_fields_requested": [
+    "cmplnt_num",
+    "cmplnt_fr_dt",
+    "law_cat_cd",
+    "ofns_desc",
+    "boro_nm",
+    "latitude",
+    "longitude"
+  ],
+  "source": "nypd_complaint",
+  "title": "NYPD Complaint Data Current (Year To Date)"
+}

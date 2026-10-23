@@ -1,0 +1,25 @@
+{
+  "access_date": "2026-10-17",
+  "captured_at": "2026-10-17T19:39:44.879483+00:00",
+  "datasets": [
+    {
+      "dataset_id": "erm2-nwe9",
+      "page_url": "https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2020-to-Present/erm2-nwe9",
+      "row_count": 28,
+      "source": "nyc_311"
+    },
+    {
+      "dataset_id": "5uac-w243",
+      "page_url": "https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-Year-To-Date-/5uac-w243",
+      "row_count": 20,
+      "source": "nypd_complaint"
+    },
+    {
+      "dataset_id": "8m42-w767",
+      "page_url": "https://data.cityofnewyork.us/Public-Safety/Fire-Incident-Dispatch-Data/8m42-w767",
+      "row_count": 20,
+      "source": "fdny_fire"
+    }
+  ],
+  "note": "Aggregate-safe fields only. Capture command: python -m events_briefing refresh-snapshots --online"
+}

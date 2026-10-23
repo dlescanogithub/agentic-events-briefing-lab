@@ -1,0 +1,108 @@
+{
+  "version": "2026-10-17.1",
+  "weights": {
+    "severity": 0.4,
+    "recency": 0.25,
+    "density": 0.2,
+    "category": 0.15
+  },
+  "recency_half_life_hours": 24,
+  "density_cap": 5,
+  "group_floors": {
+    "life_safety": 4.0,
+    "property": 3.0,
+    "quality_of_life": 2.0,
+    "other": 1.0,
+    "noise": 0.0
+  },
+  "category_weights": {
+    "life_safety": 1.0,
+    "property": 0.7,
+    "quality_of_life": 0.45,
+    "other": 0.3,
+    "noise": 0.1
+  },
+  "nyc_311": {
+    "exact": {
+      "hazardous materials": "life_safety",
+      "traffic signal condition": "life_safety",
+      "electrical": "property",
+      "illegal parking": "quality_of_life",
+      "abandoned vehicle": "quality_of_life",
+      "homeless person assistance": "quality_of_life",
+      "residential disposal complaint": "quality_of_life",
+      "dirty condition": "quality_of_life",
+      "water maintenance": "property",
+      "non-emergency police matter": "other"
+    },
+    "prefix": [
+      {"prefix": "noise", "group": "noise"}
+    ],
+    "default_group": "other",
+    "severity_by_group": {
+      "life_safety": 0.7,
+      "property": 0.45,
+      "quality_of_life": 0.3,
+      "other": 0.25,
+      "noise": 0.15
+    },
+    "severity_overrides": {
+      "traffic signal condition": 0.55
+    }
+  },
+  "nypd": {
+    "life_safety_keywords": [
+      "ASSAULT",
+      "ROBBERY",
+      "RAPE",
+      "SEX CRIME",
+      "MURDER",
+      "HOMICIDE",
+      "WEAPON",
+      "ARSON",
+      "KIDNAP",
+      "MANSLAUGHTER"
+    ],
+    "property_keywords": [
+      "LARCENY",
+      "BURGLARY",
+      "MISCHIEF",
+      "STOLEN",
+      "THEFT",
+      "FRAUD",
+      "FORGERY"
+    ],
+    "qol_keywords": [
+      "HARRASS",
+      "HARASS",
+      "VEHICLE AND TRAFFIC",
+      "DISORDER",
+      "TRESPASS"
+    ],
+    "law_severity": {
+      "FELONY": 0.9,
+      "MISDEMEANOR": 0.55,
+      "VIOLATION": 0.3
+    },
+    "default_severity": 0.4
+  },
+  "fdny": {
+    "group_by_classification_group": {
+      "Structural Fires": "life_safety",
+      "Medical Emergencies": "life_safety",
+      "Medical MFAs": "life_safety",
+      "NonMedical Emergencies": "property",
+      "NonMedical MFAs": "other"
+    },
+    "default_group": "other",
+    "alarm_severity": {
+      "first alarm": 0.45,
+      "all hands working": 0.7,
+      "second alarm": 0.75,
+      "third alarm": 0.85,
+      "fourth alarm": 0.92,
+      "fifth alarm": 1.0
+    },
+    "structural_floor": 0.7
+  }
+}
