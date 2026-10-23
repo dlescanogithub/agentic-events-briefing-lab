@@ -70,8 +70,7 @@ _BOROUGH_NAMES: tuple[tuple[str, str], ...] = (
 )
 _BOROUGH_ALT = "|".join(name for name, _canonical in _BOROUGH_NAMES)
 _BOROUGH_COUNT = re.compile(
-    rf"\b({_COUNT_TOKEN}|uno|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez)"
-    rf"\s+(?:in|en)\s+(?:the\s+|el\s+|la\s+)?({_BOROUGH_ALT})\b",
+    rf"\b({_COUNT_TOKEN})\s+in\s+(?:the\s+)?({_BOROUGH_ALT})\b",
     re.IGNORECASE,
 )
 # External verification only. This lab did not re-run the set.
@@ -83,22 +82,9 @@ EXTERNAL_SOURCE = (
 )
 POST_CHANGE_RECALL = "not measured yet"
 _SCOPE_AFTER = re.compile(
-    rf"(?:\s+\w+){{0,6}}?\s+(?:in|en)\s+(?:the\s+|el\s+|la\s+)?({_BOROUGH_ALT})\b",
+    rf"(?:\s+\w+){{0,6}}?\s+in\s+(?:the\s+)?({_BOROUGH_ALT})\b",
     re.IGNORECASE,
 )
-_SPANISH_COUNTS = {
-    "uno": 1,
-    "una": 1,
-    "dos": 2,
-    "tres": 3,
-    "cuatro": 4,
-    "cinco": 5,
-    "seis": 6,
-    "siete": 7,
-    "ocho": 8,
-    "nueve": 9,
-    "diez": 10,
-}
 
 # Longer phrases first so "this morning" is judged as today-class, not a fragment.
 _RELATIVE: tuple[tuple[str, str], ...] = (
@@ -106,15 +92,10 @@ _RELATIVE: tuple[tuple[str, str], ...] = (
     ("this afternoon", "today"),
     ("this evening", "today"),
     ("right now", "never"),
-    ("esta mañana", "today"),
-    ("esta noche", "today"),
     ("tonight", "today"),
     ("yesterday", "yesterday"),
     ("recently", "never"),
     ("today", "today"),
-    ("ahora", "never"),
-    ("ayer", "yesterday"),
-    ("hoy", "today"),
 )
 
 
@@ -327,7 +308,4 @@ def _present(text: str, phrase: str) -> bool:
 def _parse_count(token: str) -> int | None:
     if token.isdigit():
         return int(token)
-    lowered = token.lower()
-    if lowered in _NUMBER_WORDS:
-        return _NUMBER_WORDS[lowered]
-    return _SPANISH_COUNTS.get(lowered)
+    return _NUMBER_WORDS.get(token.lower())

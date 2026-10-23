@@ -1,4 +1,4 @@
-"""Guionista: ask a provider, validate ids and prose, retry, then fail closed."""
+"""Scriptwriter: ask a provider, validate ids and prose, retry, then fail closed."""
 
 from __future__ import annotations
 

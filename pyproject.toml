@@ -1,6 +1,6 @@
 [project]
 name = "events-briefing"
-version = "0.1.0"
+version = "0.1.1"
 description = "Offline-capable NYC incident ranking and approval-gated briefing lab. Code is MIT; NYC Open Data snapshots keep the City's terms."
 readme = "README.md"
 requires-python = ">=3.11"

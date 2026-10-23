@@ -56,7 +56,7 @@ AS_OF = date(2026, 10, 17)
 NEGATION_LITERALS = (
     "The briefing was not published.",
     "The note was not emailed.",
-    "El informe no fue enviado.",
+    "The bulletin was never sent.",
 )
 PARAPHRASE_NOTE = (
     "The rundown is already in the inbox.",
@@ -182,12 +182,12 @@ def test_relative_time_and_counts() -> None:
 
     yesterday = AS_OF - timedelta(days=1)
     prior = _one("ROBBERY", f"{yesterday.isoformat()}T12:00:00")
-    ayer = _segment(
+    yesterday_text = _segment(
         "1 robbery yesterday",
         f"As of {AS_OF.isoformat()}. One robbery incident dated {yesterday.isoformat()}.",
         ["nypd_complaint:1"],
     )
-    assert validate_briefing_text(ayer, prior, AS_OF) == []
+    assert validate_briefing_text(yesterday_text, prior, AS_OF) == []
 
 
 def test_gate_rejects_tamper_empty_actor_and_unlisted_actor(tmp_path: Path) -> None:
@@ -252,7 +252,7 @@ def test_claim_heuristic_negation_window_and_measured_limits() -> None:
         assert claim_hits(text) == []
         assert claims_published_while_outbox_empty(text, 0) is False
     assert claim_hits("The report was sent.")
-    assert claim_hits("El parte se publicó y fue enviado.")
+    assert claim_hits("The bulletin was published and sent.")
     for text in PARAPHRASE_NOTE:
         assert claim_hits(text) == []
     for text in EXTERNAL_FP_EXAMPLES:
