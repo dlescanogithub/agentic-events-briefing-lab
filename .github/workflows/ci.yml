@@ -1,0 +1,81 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+env:
+  EVENTS_OFFLINE: "1"
+  LIVE_LLM: "0"
+  # Public lab fixture. Eval is demo mode and may use it. briefing refuses it.
+  # Not a production credential. Rotate it outside demo mode.
+  APPROVAL_STATE_KEY: "lab-simulated-not-a-secret"
+  PYTHONUNBUFFERED: "1"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -e ".[dev]"
+      - run: python -m ruff check src tests
+      - run: python -m ruff format --check src tests
+
+  types:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -e ".[dev]"
+      - run: python -m mypy
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -e ".[dev]"
+      - run: python -m pytest
+
+  evals:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -e ".[dev]"
+      - name: invariant eval gate
+        run: python -m events_briefing eval
+      - name: forced regression must exit 1
+        run: |
+          set +e
+          python -m events_briefing eval-regression
+          code=$?
+          set -e
+          if [ "$code" -ne 1 ]; then
+            echo "expected eval-regression to exit 1, got $code"
+            exit 1
+          fi
+          echo "regression gate went red as required (exit 1)"
+
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -e ".[dev]"
+      - run: python -m events_briefing secretscan
