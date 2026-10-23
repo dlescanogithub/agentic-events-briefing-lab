@@ -5,6 +5,7 @@
 - Proves an explicit rubric ranks every life-safety incident above noise on a synthetic set, and a local outbox stays empty until an approval gate (simulated actor) is APPROVED.
 - One command: `python3 -m events_briefing demo --offline`
 - Docs: [docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)
+- **Demo video (English, offline):** [docs/demo/README.md](docs/demo/README.md) — [`agentic_events_briefing_lab_demo_en.mp4`](docs/demo/agentic_events_briefing_lab_demo_en.mp4)
 
 Recreated scenario with public data, not a client deliverable.
 

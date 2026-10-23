@@ -1,0 +1,22 @@
+[
+ {
+  "id": "A_hook",
+  "text": "A morning events briefing from public snapshots, ranked for a duty editor. Stub writer. Offline. Cost zero dollars. A simulated editor approves before publish."
+ },
+ {
+  "id": "B_demo",
+  "text": "Mode snapshots. Model leg stub. Status PUBLISHED after the simulated editor gate. Sixty-seven incidents, one withheld as sensitive. Rubric twenty twenty-six dash ten dash seventeen point one."
+ },
+ {
+  "id": "C_rank",
+  "text": "Top rows are life-safety. Scores around four point five down to four point four three on the stub ranker."
+ },
+ {
+  "id": "D_gate",
+  "text": "Publish from DRAFT without approval is refused. The outbox stays local. Field-crew dispatch is not implemented."
+ },
+ {
+  "id": "E_close",
+  "text": "Use it to rehearse ranking and a human gate before any send exists. Not covered: a real editor channel, live pull in C-I, or proof a desk already adopted it. Run python -m events_briefing demo --offline. Lab path cost: zero."
+ }
+]

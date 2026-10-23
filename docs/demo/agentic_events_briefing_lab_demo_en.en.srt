@@ -1,0 +1,42 @@
+1
+00:00:00,900 --> 00:00:05,430
+A morning events briefing from public snapshots, ranked for a duty editor.
+
+2
+00:00:05,500 --> 00:00:11,410
+Stub writer. Offline. Cost zero dollars. A simulated editor approves before
+publish.
+
+3
+00:00:12,680 --> 00:00:18,170
+Mode snapshots. Model leg stub. Status PUBLISHED after the simulated editor
+gate.
+
+4
+00:00:18,200 --> 00:00:24,950
+Sixty-seven incidents, one withheld as sensitive. Rubric twenty twenty-six
+dash ten dash seventeen point one.
+
+5
+00:00:26,160 --> 00:00:32,860
+Top rows are life-safety. Scores around four point five down to four point
+four three on the stub ranker.
+
+6
+00:00:34,070 --> 00:00:41,650
+Publish from DRAFT without approval is refused. The outbox stays local. Field-
+crew dispatch is not implemented.
+
+7
+00:00:42,880 --> 00:00:46,960
+Use it to rehearse ranking and a human gate before any send exists.
+
+8
+00:00:47,020 --> 00:00:53,480
+Not covered: a real editor channel, live pull in C-I, or proof a desk already
+adopted it.
+
+9
+00:00:53,570 --> 00:01:00,690
+Run python -m events_briefing demo --offline. Lab path cost: zero.
+
